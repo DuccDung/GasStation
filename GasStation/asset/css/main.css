@@ -1,0 +1,563 @@
+﻿.sogecgas__app {
+    /* background-image: linear-gradient(0, #8097fb, #0011ff); */
+    background-color: rgba(1, 1, 1, 0.1);
+}
+
+/* ========== nav================== */
+.nav-list-left,
+.nav-list--right {
+    display: flex;
+    margin: 0;
+    height: 43px;
+    align-items: center;
+    padding: 0;
+}
+
+.nav-item {
+    list-style: none;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #fafafa;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.nav-item--link {
+    font-size: 1.5rem;
+    color: #fafafa;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.header {}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(0, #070fa9, #5168db);
+    border-radius: 2px;
+}
+
+.nav-pos {
+    position: absolute;
+    top: 100%;
+}
+
+/* =============== end nav =============== */
+/* =============== station =============== */
+.station-list {
+    background-color: grey;
+    padding: 10;
+    text-align: center;
+    width: 120px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    display: none;
+}
+
+.station-list::before {
+    display: block;
+    content: "";
+    width: 104px;
+    height: 28px;
+    position: absolute;
+    top: -13px;
+}
+
+.station-hover:hover .station-list {
+    display: block;
+}
+
+.station-item {
+    list-style: none;
+    padding: 2px 0;
+    border-radius: 5px;
+}
+
+.station-item:hover {
+    background-image: linear-gradient(0, #4b4a4c, #4e4f52);
+}
+
+.station-item a {
+    text-decoration: none;
+    color: #fafafa;
+    font-size: 1.4rem;
+    font-weight: 500;
+    display: block;
+    margin: 10px 0;
+}
+.nav-item a {
+    text-decoration: none;
+    color: #fafafa;
+    font-size: 1.4rem;
+    font-weight: 500;
+    display: block;
+    margin: 10px 0;
+}
+/* =============== station end =============== */
+/* =============== setting =============== */
+.setting-list {
+    background-color: grey;
+    padding: 10;
+    text-align: center;
+    width: 120px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    display: none;
+}
+
+.setting-list::before {
+    display: block;
+    content: "";
+    width: 104px;
+    height: 28px;
+    position: absolute;
+    top: -13px;
+}
+
+.setting-hover:hover .setting-list {
+    display: block;
+}
+
+/* =============== setting end =============== */
+/* =============== MMBTU =============== */
+
+.mmbtu-list {
+    background-color: grey;
+    padding: 10;
+    text-align: center;
+    width: 120px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    display: none;
+}
+
+.mmbtu-list::before {
+    display: block;
+    content: "";
+    width: 104px;
+    height: 28px;
+    position: absolute;
+    top: -13px;
+}
+
+.mmbtu-hover:hover .mmbtu-list {
+    display: block;
+}
+
+/* =============== MMBTU end =============== */
+/* =============== MIXER =============== */
+
+.mixer-list {
+    background-color: grey;
+    padding: 10;
+    text-align: center;
+    width: 120px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    display: none;
+}
+
+.mixer-list::before {
+    display: block;
+    content: "";
+    width: 104px;
+    height: 28px;
+    position: absolute;
+    top: -13px;
+}
+
+.mixer-hover:hover .mixer-list {
+    display: block;
+}
+
+/* =============== MIXER END=============== */
+
+/* =============== PRU CNG =============== */
+.pru_cng-list {
+    background-color: grey;
+    padding: 10;
+    text-align: center;
+    width: 120px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    display: none;
+}
+
+.pru_cng-list::before {
+    display: block;
+    content: "";
+    width: 104px;
+    height: 28px;
+    position: absolute;
+    top: -13px;
+}
+
+.pru_cng-hover:hover .pru_cng-list {
+    display: block;
+}
+
+/* =============== PRU CNG  end=============== */
+/* =============== ALARM =============== */
+.alarm-list {
+    background-color: grey;
+    padding: 10;
+    text-align: center;
+    width: 120px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    display: none;
+}
+
+.alarm-list::before {
+    display: block;
+    content: "";
+    width: 104px;
+    height: 28px;
+    position: absolute;
+    top: -13px;
+}
+
+.alarm-hover:hover .alarm-list {
+    display: block;
+}
+
+/* =============== ALARM END =============== */
+
+
+/* ============== Containner ================ */
+.containner {
+    margin-top: 20px;
+}
+
+.containner-inner {
+    height: 560px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.footer-inner {
+    height: 200px;
+    text-align: center;
+    background-color: #4e4f52;
+}
+
+
+
+/*============= authForm ==================*/
+.form-group.invalid .form-message {
+    color: #f33a58;
+}
+
+.form-message {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    padding: 4px 0 0;
+}
+
+.modal {
+   display:flex;
+   align-items:center;
+   justify-content:center;
+   margin-top:10px;
+}
+.auth-form {
+    width: 400px;
+    background-color: aliceblue;
+}
+
+.auth-form__contianer {
+    padding: 15px 15px 0px 15px;
+}
+
+.auth-form__input {
+    display: block;
+}
+
+.auth-form__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 0 12px;
+}
+
+.auth-form__heading {
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--text--color);
+    margin-top: 0px;
+    cursor: default;
+}
+
+.auth-form__switch-btn {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin-top: 0px;
+    cursor: pointer;
+}
+
+.auth-form__input {
+    height: 3rem;
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 0 12px;
+    font-size: 1.4rem;
+    border: 1px solid var(--border--color);
+    border-radius: 5px;
+    outline: none;
+}
+
+.auth-form__aside {
+    margin-top: 20px;
+}
+
+.auth-form__input:focus {
+    border-color: #888;
+}
+
+.auth-form_policy-text {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    text-align: center;
+    padding: 0 12px;
+}
+
+.auth-form_text-link {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.auth-form__control {
+    margin-top: 80px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.auth-form__control-login {
+    margin-left: 5px;
+}
+
+.auth-form__socials {
+    background-color: #f6f6f6;
+    padding: 16px 0px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    margin-top: 20px;
+}
+
+.btn--with-icon {
+    text-decoration: none;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-form__socials-icon {
+    font-size: 1.7rem;
+}
+
+.auth-form__socials-title {
+    margin: 0 10px;
+}
+
+.auth-form__socials--facebook .auth-form__socials-icon {
+    color: var(--white--color);
+}
+
+.auth-form__socials--facebook {
+    background-color: #3A5A98;
+    color: var(--white--color);
+}
+
+.auth-form__socials--google .auth-form__socials-icon {
+    color: #db3838;
+    background-color: var(--white--color);
+}
+
+.auth-form__socials--google .auth-form__socials-title {
+    color: #666;
+}
+
+/* login */
+.user-login--img {
+    font-size: 1.9rem;
+    color: #fff;
+    display: none;
+}
+
+.auth-form__help {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.auth-form__help-text-link {
+    text-decoration: none;
+    color: var(--text--color);
+    font-size: 1.2rem;
+}
+
+.auth-form__help-text-link--color {
+    color: var(--primary-color);
+}
+
+.auth-form__help-text--separation::before {
+    content: "";
+    border-left: 1px solid #8b8787;
+    height: 14px;
+    margin-right: 3px;
+}
+
+/*============= authForm end ==================*/
+
+/*============= setting ===============*/
+.set-main-table {
+    margin-top: 10px;
+    padding: 0;
+    width: 100%;
+    border-collapse: collapse;
+    box-sizing: border-box;
+}
+
+.set-containner-table table,
+.set-containner-table th,
+.set-containner-table td {
+    border: 1px solid black;
+}
+
+.set-containner-table th,
+.set-containner-table td {
+    padding: 8px;
+    text-align: center;
+}
+
+.set-form__group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .set-form__group input {
+        margin-left: 3px;
+    }
+.set-input-check {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.set-input-txt {
+    width: 70px;
+    height: 20px;
+    cursor: pointer;
+}
+.cell-4-2 input,
+.cell-4-1 input {
+    width: 50px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.cell-2-1_ input {
+    width: 50px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.cell-2-2_ input {
+    width: 50px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.cell-3-1_ input {
+    width: 50px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.cell-3-2_ input {
+    width: 50px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.cell-3-3_ input {
+    width: 50px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.cell-4-1_ input {
+    width: 50px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.cell-4-2_ input {
+    width: 50px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.cell-5-1_ input {
+    width: 50px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.cell-6-1_ input {
+    width: 50px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.cell-6-2_ input {
+    width: 50px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.cell-7_ input {
+    width: 50px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.cell-8_ input {
+    width: 50px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.set-result {
+    position: absolute;
+    right: -105px;
+    top: 10px;
+    height: 100%;
+    width: 100px;
+}
+
+.set-containner-table {
+    position: relative;
+    padding: 0;
+}
+
+.set-result button {
+    width: 100%;
+    height: 30px;
+    padding: 17px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*============= setting end ===========*/

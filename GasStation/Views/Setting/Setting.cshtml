@@ -1,0 +1,165 @@
+﻿
+@{
+    ViewBag.Title = "Setting";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="set-containner grid wide">
+    <div class="set-containner grid wide">
+        <div class="set-containner-table row">
+            <!-- table 1 -->
+            <table class="set-main-table col l-12">
+                <tr class="row-1">
+                    <th class="header-1">Customer</th>
+                    <th class="header-2" colspan="2">
+                        <div class="set-form__group">
+                            <label for="email">
+                                Email
+                            </label>
+                            <input class="set-input-txt" type="text" name="email" id="email">
+                        </div>
+                    </th>
+                    <th class="header-3" colspan="3">
+                        <div class="set-form__group">
+                            <label for="name">
+                                UserName
+                            </label>
+                            <input class="set-input-txt" type="text" name="name" id="name">
+                        </div>
+                    </th>
+                    <th class="header-4" colspan="2">
+                        <div class="set-form__group">
+                            <label for="Password">
+                                Password
+                            </label>
+                            <input class="set-input-txt" type="password" name="password" id="password">
+                        </div>
+                    </th>
+                    <th class="header-5" colspan="2">
+                        <div class="set-form__group">
+                            <label for="sms">
+                                SMS
+                            </label>
+                            <input class="set-input-txt" type="text" name="sms" id="sms">
+                        </div>
+                    </th>
+                    <th class="header-6">
+                        <div class="set-form__group">
+                            <label for="smoke">
+                                Smoke
+                            </label>
+                            <input class="set-input-check" type="checkbox" name="smoke" id="smoke">
+                        </div>
+                    </th>
+                    <th class="header-7" colspan="2">
+                        <div class="set-form__group">
+                            <label for="leak">
+                                Leak
+                            </label>
+                            <input class="set-input-check" type="checkbox" name="leak" id="leak">
+                        </div>
+                    </th>
+                    <th class="header-8">
+                        <div class="set-form__group">
+                            <label for="maintain">
+                                Maintain
+                            </label>
+                            <input class="set-input-check" type="checkbox" name="maintain" id="maintain">
+                        </div>
+                    </th>
+                </tr>
+                <tr class="row-2">
+                    <td class="cell-1">STATION ID</td>
+                    <td class="cell-2-1">STATION NAME</td>
+                    <td class="cell-2-2">SMS</td>
+                    <td class="cell-3-1">CODE</td>
+                    <td class="cell-3-2">PCV1</td>
+                    <td class="cell-3-3">PCV2</td>
+                    <td class="cell-4-1">
+                        <div class="set-form__group">
+                            <label for="ssv1_max">
+                                SSV1 MAX
+                            </label>
+                            <input class="set-input-txt" type="text" name="ssv1_max" id="ssv1_max">
+                        </div>
+                    </td>
+                    <td class="cell-4-2">
+                        <div class="set-form__group">
+                            <label for="ssv1_max">
+                                SSV1 MAX
+                            </label>
+                            <input class="set-input-txt" type="text" name="ssv1_max" id="ssv1_max">
+                        </div>
+                    </td>
+                    <td class="cell-5-1">
+                        PSV
+                    </td>
+                    <td class="cell-5-2">ANALOG</td>
+
+                    <td class="cell-6-1">MUL</td>
+                    <td class="cell-6-2">VAL_OFF</td>
+                    <td class="cell-7">HIGH</td>
+                    <td class="cell-8">LOW</td>
+                </tr>
+                <tr class="row-3">
+                    <td class="cell-1_">NDNV3J6X</td>
+                    <td class="cell-2-1_">
+                        <input class="set-input-txt" type="text" name="" id="">
+                    </td>
+                    <td class="cell-2-2_">
+                        <input class="set-input-txt" type="text" name="" id="">
+                    </td>
+                    <td class="cell-3-1_">
+                        <input class="set-input-txt" type="text" name="" id="">
+                    </td>
+                    <td class="cell-3-2_">
+                        <input class="set-input-txt" type="text" name="" id="">
+
+                    </td>
+                    <td class="cell-3-3_">
+                        <input class="set-input-txt" type="text" name="" id="">
+                    </td>
+                    <td class="cell-4-1_">
+                        <div class="set-form__group">
+                            <label for="ssv1_min">SSV1 MIN</label>
+                            <input class="set-input-txt" type="text" name="ssv1_min" id="ssv1_min">
+                        </div>
+                    </td>
+                    <td class="cell-4-2_">
+                        <div class="set-form__group">
+                            <label for="ssv2_min">SSV2 MIN</label>
+                            <input class="set-input-txt" type="text" name="ssv2_min" id="ssv2_min">
+                        </div>
+                    </td>
+                    <td class="cell-5-1_">
+                        <input class="set-input-txt" type="text" name="" id="">
+                    </td>
+                    <td class="cell-5-2_">
+                        Pressure
+                    </td>
+                    <td class="cell-6-1_">
+                        <input class="set-input-txt" type="text" name="" id="">
+                    </td>
+                    <td class="cell-6-2_">
+                        <input class="set-input-txt" type="text" name="" id="">
+                    </td>
+                    <td class="cell-7_">
+                        <input class="set-input-txt" type="text" name="" id="">
+                    </td>
+                    <td class="cell-8_">
+                        <input class="set-input-txt" type="text" name="" id="">
+                    </td>
+                </tr>
+                <div class="set-result">
+                    <button class="" type="submit">Update</button>
+                    <button class="" type="submit">Reboot</button>
+                    <button class="" type="submit">Show</button>
+                    <button class="" type="submit">Export</button>
+                </div>
+            </table>
+            <!-- end -->
+        </div>
+
+
+    </div>
+</div>

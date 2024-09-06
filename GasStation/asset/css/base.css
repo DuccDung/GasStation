@@ -1,0 +1,128 @@
+:root {
+    --primary-color: #101cce;
+    --white--color: #fff;
+    --back--color: #000;
+    --text--color: #333;
+    --border--color: #dbdbdb;
+
+    --header-height: 120px;
+    --navbar-height: 34px;
+    --header__sort-bar-height: 46px;
+    --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    box-sizing: inherit;
+}
+
+html {
+    /* 10px */
+    font-size: 60%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+
+p {
+    font-size: 1.6rem;
+}
+
+.grid {
+    width: 1400px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid-full-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+    padding: 0 76px;
+}
+
+.grid__column-2 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 16.6667%;
+}
+
+.grid__column-2-4 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 20%;
+}
+
+.grid__column-10 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 83.3334%;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes growth {
+    from {
+        transform: scale(var(--growth-from));
+    }
+
+    to {
+        transform: scale(var(--growth-to));
+    }
+}
+
+/* button style */
+.btn {
+    min-width: 142px;
+    height: 30px;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.3rem;
+    padding: 0 8px;
+    background-color: var(--white--color);
+}
+
+.btn.btn-primary {
+    color: var(--white--color);
+    background-color: var(--primary-color);
+}
+
+.btn--size-s {
+    min-width: 90px;
+    height: 20px;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.2rem;
+    padding: 0 8px;
+    background-color: var(--white--color);
+}
+
+.btn--size-l {
+    min-width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.7rem;
+    padding: 0 8px;
+    background-color: var(--white--color);
+}

@@ -1,0 +1,107 @@
+﻿<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="~/asset/fonts/fontawesome-free-6.5.2-web/fontawesome-free-6.5.2-web/css/all.min.css">
+    <link rel="stylesheet" href="~/asset/css/grid.css">
+    <link rel="stylesheet" href="~/asset/css/base.css">
+    <link rel="stylesheet" href="~/asset/css/main.css">
+    <link rel="stylesheet" href="~/asset/css/responsive.css">
+</head>
+<body>
+   
+    <div class="sogecgas__app ">
+        <header class="header grid wide">
+            <div class="header-inner row">
+                <ul class="nav-list-left">
+                    <li class="nav-item station-hover">
+                        <a href="" class="nav-item--link">STATION</a>
+                        <ul class="station-list nav-pos">
+                            <li class="station-item"><a href="~/Home/lgds_sogec">LGDS SOGEC</a></li>
+                            <li class="station-item"><a href="~/Home/zocvefc">ZOCV FC</a></li>
+                            <li class="station-item"><a href="~/Home/zocvevc">ZOCV EVC</a></li>
+                            <li class="station-item"><a href="~/Home/marubeni">MARUBENI PAPER</a></li>
+                            <li class="station-item"><a href="~/Home/nitori">NITORY</a></li>
+                            <li class="station-item"><a href="~/Home/yoshino">YOSHINO</a></li>
+                            <li class="station-item"><a href="~/Home/iguacu">IGUACU</a></li>
+                            <li class="station-item"><a href="~/Home/arakawa">ARAKAWA</a></li>
+                            <li class="station-item"><a href="~/Home/spmvc">SPMCV</a></li>
+                            <li class="station-item"><a href="~/Home/vrec">VREC</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item setting-hover">
+                        <a href="" class="nav-item--link">SETTING</a>
+                        <ul class="setting-list nav-pos">
+                            <li class="station-item"><a href="~/Setting/Setting">STATION</a></li>
+                            <li class="station-item"><a href="">PASSWORD</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item mmbtu-hover">
+                        <a href="" class="nav-item--link">MMBTU</a>
+                        <ul class="mmbtu-list nav-pos">
+                            <li class="station-item"><a href="">MMBTU HY</a></li>
+                            <li class="station-item"><a href="">MMBTU BD</a></li>
+                            <li class="station-item"><a href="">MMBTU PM3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item mixer-hover">
+                        <a href="" class="nav-item--link">MIXER</a>
+                        <ul class="mixer-list nav-pos">
+                            <li class="station-item"><a href="~/Mixer/MixerBd">ACV MIXER BD</a></li>
+                            <li class="station-item"><a href="~/Mixer/MixerHy">ACV MIXER HY</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item pru_cng-hover">
+                        <a href="" class="nav-item--link">PRU CNG</a>
+                        <ul class="pru_cng-list nav-pos">
+                            <li class="station-item"><a href="~/Pru_Cng/PruCngPm3">PRU CNG PM3</a></li>
+                            <li class="station-item"><a href="~/Pru_Cng/AcvbdPru">ACVBD PRU</a></li>
+                            <li class="station-item"><a href="~/Pru_Cng/AcvbdHyPru">ACVHY PRU</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-item--link">SUMMARY</a>
+                        <div class="summary-list nav-pos"></div>
+                    </li>
+                    <li class="nav-item alarm-hover">
+                        <a href="" class="nav-item--link">ALARM</a>
+                        <ul class="alarm-list nav-pos">
+                            <li class="station-item"><a href="">ALARM UPS</a></li>
+                            <li class="station-item"><a href="">ALARM LOG</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-item--link">REPORT LOG</a>
+                        <div class="report_log-list nav-pos"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-item--link">HELP</a>
+                        <div class="help-list nav-pos"></div>
+                    </li>
+                </ul>
+                <ul class="nav-list--right">
+                    <li class="nav-item"><a href="~/LoginRegister/Login">LOGIN</a></li>
+                    <li class="nav-item"><a href="~/LoginRegister/Register">REGISTER</a></li>
+                </ul>
+            </div>
+        </header>
+
+        @RenderBody();
+
+        <footer class="footer grid wide">
+            <div class="footer-inner row">
+                footer
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

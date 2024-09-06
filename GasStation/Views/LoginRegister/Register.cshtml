@@ -1,0 +1,74 @@
+﻿
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    <!-- Modal layout -->
+<div class="modal grid wide">
+    <!-- register from -->
+    <div class="auth-form auth-form--register ">
+        <form action="" id="form-1">
+            <div class="auth-form__contianer">
+
+                <div class="auth-form__header">
+                    <h3 class="auth-form__heading"> Đăng kí</h3>
+                    <a href="./login.html" style="text-decoration: none;">
+                        <span class="auth-form__switch-btn">Đăng nhập</span>
+                    </a>
+                </div>
+                @*<div class="message-error">
+                        <i class="message-error--icon fa-solid fa-triangle-exclamation"></i>
+                        <h2 class="message-error--content"> Tên tài khoản đã có người sử dụng!</h2>
+                    </div>*@
+                <div class="auth-form__form">
+                    <div class="auth-form-group">
+                        <div class="form-group">
+                            <span class="form-message form-message--name"></span>
+                            <input type="text" class="auth-form__input" id="fullname" placeholder="Full Name">
+                        </div>
+                        <div class="form-group">
+                            <span class="form-message form-message--email"></span>
+                            <input type="text" class="auth-form__input" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <span class="form-message form-message--password"></span>
+                            <input type="password" class="auth-form__input" id="password"
+                                   placeholder="Mật khẩu">
+                        </div>
+                        <div class="form-group">
+                            <span class="form-message form-message--password_"></span>
+                            <input type="password" class="auth-form__input" id="password_"
+                                   placeholder="Nhập lại mật khẩu">
+                        </div>
+                    </div>
+                    <div class="auth-form__aside">
+                        <p class="auth-form_policy-text">
+                            Bằng việc đăng kí, bạn đã đồng ý với chúng tôi
+                            <a href="" class="auth-form_text-link">Điều khoản dịch vụ</a> &
+                            <a href="" class="auth-form_text-link">Chính sách bảo mật</a>
+                        </p>
+
+                    </div>
+                </div>
+                <div class="auth-form__control">
+                    <div class="auth-form__control-back">
+                        <button class="btn">
+                            <a href="~/Home/Index"
+                               style="text-decoration: none; color: black; height: 50px; width: 100px;">
+                                TRỞ LẠI
+                            </a>
+                        </button>
+                    </div>
+                    <div class="auth-form__control-login">
+                        <button type="submit" class="btn btn-primary">ĐĂNG KÝ</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+       
+    </div>
+    <script src="~/asset/js/validationregister.js"></script>
+</div>
+           
+
